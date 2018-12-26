@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-size:20px;
+	font-family:alex-brush;
+	background-color:#919191;
+	margin:0px;
+}
+#top{
+	position:relative;
+	width:100%;
+	text-align:center;
+	
+}
+#top #main{
+	position:relative;
+	color:black;
+	height:10em;
+}
+#top #title{
+	position:relative;
+	font-size:3.5em;
+	font-family:allura;
+}
+#top #caption{
+	position:relative;
+	font-size:2em;
+}
+#menu{
+	list-style-type: none;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	font-size:150%;
+	font-family: "Times New Roman", Times, serif;
+	clear:both;
+	
+}
+#menu > li{
+	width: 25%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align:center;
+	background-color:rgb(70, 118, 72, 1);	
+	
+}
+#menu .sousMenu{
+	width: 25%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: none;
+	background-color:rgb(70, 118, 72, 0.3);
+	z-index:99;
+	position:absolute;
+}
+#menu .sousMenu li{
+	float: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	z-index:99;	
+}
+#menu li a:link, #menu li a:visited{
+	display: block;
+	color: #FFF; 
+	background-color:rgb(70, 118, 72, 0.3);  
+	margin: 0;
+	padding: 0.7em 1em;	
+	text-decoration: none;
+	z-index:99;
+}
+#menu li a:hover{
+	background-color: black;
+	z-index:99;
+}
+#menu .sousMenu li a:hover{
+	background-color: black;
+	z-index:99;
+}
+#menu li:hover  .sousMenu { 
+	display: block; 
+	z-index:99;
+}
+.container{
+	margin-right:3em;
+	margin-left:3em;
+	margin-top:10em;
+}
+.GOTimage{
+	
+	border:3px solid black;
+
+	width:100%;
+}
+#logo{
+	width:17%;
+	position:absolute;
+	top:0;
+	left:0;
+	height:10em;
+}
+.container #txt{
+	margin-top:5%;
+	border:4px solid black;
+	font-size:1em;
+}
+.leftNav{
+	position:relative;
+	float:left;
+	width:10%;
+	height:100%;
+	background-color:#4B4B4B;
+	margin-top:4.5em;
+}
+.button{
+	width:100%;
+	background-color:#467648;
+	border:solid black;
+	color:white;
+	border-top:none;
+	
+}
+.button-top{
+	border-top:solid black;
+}
+.active{
+	background-color:#888;
+}
+.button:hover{
+	background-color:black;
+	
+}
+.charimg{
+	float:left;
+	width:25%;
+}
+.charimg img{
+	width:100%;
+}
+.charabt{
+	float:right;
+}
+#footer{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;	
+	width:100%;
+	background-color:black;
+	clear:both;
+	margin-top:0.5em;
+	padding:0.5em 0;
+	color:white;
+	clear:both;
+}
+#footer a{
+	color:white;
+}
+#footer a:hover{
+	color:cyan;
+}
