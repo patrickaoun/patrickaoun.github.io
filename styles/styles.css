@@ -3,7 +3,7 @@
 
 body{
 	font-size:20px;
-	font-family:alex-brush;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	background-color:#919191;
 	margin:0px;
 }
@@ -11,17 +11,17 @@ body{
 	position:relative;
 	width:100%;
 	text-align:center;
-	
 }
 #top #main{
 	position:relative;
 	color:black;
 	height:10em;
+	background-color:#9F191B;
+	color:white;
 }
 #top #title{
 	position:relative;
 	font-size:3.5em;
-	font-family:allura;
 }
 #top #caption{
 	position:relative;
@@ -87,15 +87,18 @@ body{
 	display: block; 
 	z-index:99;
 }
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 99 !important;
+}
 .container{
 	margin-right:3em;
 	margin-left:3em;
 	margin-top:10em;
 }
 .GOTimage{
-	
 	border:3px solid black;
-
 	width:100%;
 }
 #logo{
@@ -113,7 +116,7 @@ body{
 .leftNav{
 	position:relative;
 	float:left;
-	width:10%;
+	width:15%;
 	height:100%;
 	background-color:#4B4B4B;
 	margin-top:4.5em;
@@ -142,9 +145,60 @@ body{
 }
 .charimg img{
 	width:100%;
+	margin-left:5em;
+	margin-right:15em;
 }
 .charabt{
 	float:right;
+	border:2px solid #467648;
+	margin-right:15em;
+}
+.seasimg{
+	float:left;
+	width:30%;
+}
+.seasimg img{
+	width:100%;
+	margin-left:5em;
+	margin-right:15em;
+}
+.seasabt{
+	text-align:center;
+	float:right;
+	margin-left:5em;
+}
+.Seas1{
+	height:50%;
+	position:relative;
+}
+h3{
+	text-decoration:underline;
+}
+.downloadBook{
+	position:relative;
+}
+.debut{
+	margin:2em 5em 0 7em;
+	width:100%;
+}
+.paragraphe{
+	font-size:1.5em;
+	background-color:#467648;
+	margin-left:1.5em;
+	color:white;
+	text-align:center;
+	width:inherit;
+	background-size:auto;
+}
+.gif{
+	margin:2em 5em 0 21em;
+}
+.video{
+	width:50%;
+	margin:0 5em 0 13em;
+}
+.video img{
+	width:100%;
 }
 #footer{
 	position:relative;
