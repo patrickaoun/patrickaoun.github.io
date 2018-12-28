@@ -147,11 +147,18 @@ body{
 	width:100%;
 	margin-left:5em;
 	margin-right:15em;
+	padding-right:5em;
 }
 .charabt{
 	float:right;
 	border:2px solid #467648;
-	margin-right:15em;
+	margin-right:5em;
+	margin-left:3em;
+	overflow:auto;
+	width:27em;
+	height:13.5em;
+	padding-left:1em;
+	padding-right:1em;
 }
 .seasimg{
 	float:left;
