@@ -2,27 +2,58 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>GOT Seasons</title>
+<title>GOT Upcoming</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link href="../styles/styles.css" type="text/css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0, 0, 0,0.4)";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "rgb(145, 145, 145)";
+}
+
+
+</script>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="GotAbout.html">GOT About</a>
+  <a href="GOTCast.html">GOT Cast</a>
+  <a href="GotSeasons.html">GOT Seasons</a>
+  <a href="GotUpcoming.html">GOT Upcoming</a>
+  <a href="VikingsAbout.html">Vikings About</a>
+  <a href="VikingsCast.html">Vikings Cast</a>
+  <a href="VikingsSeasons.html">Vikings Seasons</a>
+  <a href="ContactUs.html">Contact Us</a>
+</div>
 <div id="top">
+	
 	<div id="main">
-    	<div><img src="../images/Logo.svg" id="logo"></div>    
+    	<div class="sidebtn"><button type="button" class="btn btn-danger sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
+    	<div class="bigButton">
+        <div class="sidebtn">
+        <button type="button" class="btn sidebtninner" onclick="openNav()"><i class="fas fa-bars"></i></button>																																																					</div>
+        <img src="../images/Logo.svg" id="logo"></div>    
     	<span id="title">Watch My Series</span><br>
         <span id="caption">Caption</span>
     </div>
     <div>
     <ul id="menu" data-spy="affix" data-offset-top="200">
     	<li><a href="../index.html">Home</a></li>
-        <li><a href="#">Game Of Thrones</a>
+        <li><a href="#">GOT</a>
         	<ul class="sousMenu">
             	<li><a href="GotAbout.html">About</a></li>
                 <li><a href="GOTCast.html">Cast And Characters</a></li>
@@ -32,13 +63,12 @@
      	</li>
         <li><a href="#">Vikings</a>
         	<ul class="sousMenu">
-            	<li><a href="#">About</a></li>
-                <li><a href="#">Cast And Characters</a></li>
-                <li><a href="#">Seasons</a></li>
-                <li><a href="#">Trending</a></li>
+            	<li><a href="VikingsAbout.html">About</a></li>
+                <li><a href="VikingsCast.html">Cast And Characters</a></li>
+                <li><a href="VikingsSeasons.html">Seasons</a></li>
             </ul>
         </li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
     </div>
 </div>
@@ -59,59 +89,79 @@
 	<div class="seasimg"><a href="https://www.youtube.com/watch?v=BpJYNVhGf1s" target="_blank"><img src="../images/GotS1.jpg"/></a></div>
     <div class="seasabt">
   <h3>Season 1:</h3>
-  <p>Click the picture to go and watch season 1 trailer.</p>
+  <p>Click the picture to go and watch season 1 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
   </div>
   </div>
-  <!--<div class="downloadBook">
-  	<p class="Pdf">
-    	If you would like to download "The Game Of Thrones book":<br/>
-        
-    </p>
-  </div>-->
 </div>
 
 <div id="Season2" class="tabcontent">
-<div class="charimg"><img src="../images/Seas2.jpg"/></div>
-<div class="charabt">
-  <h3>Season 2</h3>
-  <p>Catelyn is the capital of France.</p> 
-</div>
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=XuKfFzk1uQs" target="_blank"><img src="../images/Seas2.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 2:</h3>
+  <p>Click the picture to go and watch season 2 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
+  </div>
+  </div>
 </div>
 
 <div id="Season3" class="tabcontent">
-  <div class="charimg"><img src="../images/Seas3.jpg"/></div>
-  <div class="charabt">
-  <h3>Seeason 3</h3>
-  <p>Robb is the capital of Japan.</p>
-</div>
+  <div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=wBtkdje5OfY" target="_blank"><img src="../images/Seas3.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 3:</h3>
+  <p>Click the picture to go and watch season 3 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
+  </div>
+  </div>
 </div>
 <div id="Season4" class="tabcontent">
-<div class="charimg"><img src="../images/Seas4.jpg"/></div>
-  <div class="charabt">
-  <h3>Jon Snow</h3>
-  <p>Jon is the capital of Japan.</p>
-</div>
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=xZY43QSx3Fk" target="_blank"><img src="../images/Seas4.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 4:</h3>
+  <p>Click the picture to go and watch season 4 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
+  </div>
+  </div>
 </div>
 <div id="Season5" class="tabcontent">
-  <div class="charimg"><img src="../images/Seas5.jpg"/></div>
-  <div class="charabt">
-  <h3>Arya Stark</h3>
-  <p>Arya is the capital of Japan.</p>
-</div>
+  <div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=A0pLbTXPHng" target="_blank"><img src="../images/Seas5.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 5:</h3>
+  <p>Click the picture to go and watch season 5 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
+  </div>
+  </div>
 </div>
 <div id="Season6" class="tabcontent">
-<div class="charimg"><img src="../images/Seas6.jpg"/></div>
-  <div class="charabt">
-  <h3>Bran Stark</h3>
-  <p>Bran is the capital of Japan.</p>
-</div>
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=EI0ib1NErqg" target="_blank"><img src="../images/Seas6.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 6:</h3>
+  <p>Click the picture to go and watch season 6 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
+  </div>
+  </div>
 </div>
 <div id="Season7" class="tabcontent">
-<div class="charimg"><img src="../images/Seas7.jpg"/></div>
-  <div class="charabt">
-  <h3>Tyrion Lannister</h3>
-  <p>Tyrion is the capital of Japan.</p>
-</div>
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=giYeaKsXnsI" target="_blank"><img src="../images/Seas7.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 7:</h3>
+  <p>Click the picture to go and watch season 7 trailer.</p><br>
+  <p>Or click the link down below to download The Game of Thrones book"</p><br>
+  
+  </div>
+  </div>
 </div>
 
 </div>

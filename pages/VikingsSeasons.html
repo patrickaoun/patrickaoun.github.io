@@ -68,29 +68,96 @@ function closeNav() {
                 <li><a href="VikingsSeasons.html">Seasons</a></li>
             </ul>
         </li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
     </div>
 </div>
+<div class="leftNav">
+	<button class="button button-top tablinks" onclick="openChar(event, 'Season1')" id="defaultOpen">Season 1</button>
+    <button class="button tablinks" onclick="openChar(event, 'Season2')">Season 2</button>
+    <button class="button tablinks" onclick="openChar(event, 'Season3')">Season 3</button>
+    <button class="button tablinks" onclick="openChar(event, 'Season4')">Season 4</button>
+    <button class="button tablinks" onclick="openChar(event, 'Season5')">Season 5</button>
+</div>
 <div class="container">
-	<div class="debut">
-<img src="../images/raqa+new+upcoming.jpg" alt="upcomming" width="70%">
+	
+
+<div id="Season1" class="tabcontent">
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=VWBDosdLhoY" target="_blank"><img src="../images/vikingsS1.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 1:</h3>
+  <p>Click the picture to go and watch season 1 trailer.</p><br>
+  
+  </div>
+  </div>
 </div>
-<div class="paragraphe">
- <p> ARE YOU EXCITED TO SEE WHAT'S COMING NEXT??<br/>
- Click down below to watch The Season 8 Trailer
- </p>
+
+<div id="Season2" class="tabcontent">
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=fXOej9DUHJ4" target="_blank"><img src="../images/vikingsS2.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 2:</h3>
+  <p>Click the picture to go and watch season 2 trailer.</p><br>
+  
+  </div>
+  </div>
 </div>
-<div class="gif">
- <img src="../images/Fleches-1223_1.gif" alt="fleche">
+
+<div id="Season3" class="tabcontent">
+  <div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=UQm9torR1K8" target="_blank"><img src="../images/vikingsS3.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 3:</h3>
+  <p>Click the picture to go and watch season 3 trailer.</p><br>
+  
+  </div>
+  </div>
 </div>
-<div>
- <a href="https://www.youtube.com/watch?v=v5gsVRxzzI4" target="_blank"><img src="../images/GotS8.jpg" alt="Got Season 8" class="video"/></a>
+<div id="Season4" class="tabcontent">
+<div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=G3DwTh_aPKw" target="_blank"><img src="../images/vikingsS4.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 4:</h3>
+  <p>Click the picture to go and watch season 4 trailer.</p><br>
+  
+  </div>
+  </div>
 </div>
+<div id="Season5" class="tabcontent">
+  <div class="Seas1">
+	<div class="seasimg"><a href="https://www.youtube.com/watch?v=SLOa9s1q_Ug" target="_blank"><img src="../images/vikingsS5.jpg"/></a></div>
+    <div class="seasabt">
+  <h3>Season 5 :Part -A-</h3>
+  <p>Click the picture to go and watch season 5 trailer.</p><br>
+  
+  </div>
+  </div>
+</div>
+
+
 </div>
 <div id="footer">
 	©Copyright &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Contact Us:&nbsp;<a href="mailto:watchmyseries@hotmail.com">watchmyseries@hotmail.com</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Follow Us on:
 </div>
 
 </body>
+<script>
+function openChar(evt, characterName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(characterName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 </html>
