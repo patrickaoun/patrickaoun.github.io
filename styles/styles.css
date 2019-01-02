@@ -15,8 +15,8 @@ body{
 #top #main{
 	position:relative;
 	height:10em;
-	background-color:#666666;
-	color:white;
+	background-color:#666666;	/*bgcolor is gray*/
+	color:white;	/*text color white*/
 }
 #top #title{
 	position:relative;
@@ -30,13 +30,13 @@ body{
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
-  z-index: 999999;
-  top: 0;
-  left: 0;
+  position: fixed;	/*doesn't move*/
+  z-index: 999999;	/*put the sidenav above all */
+  top: 0;	/*starts from top of the page*/
+  left: 0;	/*starts from the max left (as collapsed to the left)*/
   background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
+  overflow-x: hidden;	/*doesn't show an overflow*/
+  transition: 0.5s;	/*takes 0.5seconds to open*/
   padding-top: 60px;
 }
 
@@ -46,7 +46,7 @@ body{
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.3s;	/*takes 0.3seconds to open*/
 }
 
 .sidenav a:hover {
@@ -56,11 +56,11 @@ body{
 #menu{
 	list-style-type: none;
 	width:100%;
-	margin: 0;
-	padding: 0;
+	margin: 0;	/*no marging*/
+	padding: 0;	/*no padding*/
 	font-size:150%;
 	font-family: "Times New Roman", Times, serif;
-	clear:both;
+	clear:both; /*The clear property specifies on which sides of an element floating elements are not allowed to float*/
 	
 }
 #menu > li{
@@ -70,7 +70,7 @@ body{
 	padding: 0;
 	border: 0;
 	text-align:center;
-	background-color:rgb(70, 118, 72, 1);	
+	background-color:rgb(70, 118, 72, 1); /*the 1 stands for the opacity*/	
 	
 }
 #menu .sousMenu{
@@ -79,8 +79,8 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	display: none;
-	background-color:rgb(70, 118, 72, 0.3);
+	display: none; /*doesn't display the sousMenu*/
+	background-color:rgb(70, 118, 72, 0.3);	/*opacity is 0.3*/
 	z-index:99;
 	position:absolute;
 }
@@ -102,7 +102,7 @@ body{
 	z-index:99;
 }
 #menu li a:hover{
-	background-color: black;
+	background-color: black; /*when we hover the background becomes black*/
 	z-index:99;
 }
 #menu .sousMenu li a:hover{
@@ -113,12 +113,12 @@ body{
 	display: block; 
 	z-index:99;
 }
-.affix {
+.affix {	/*affix is a predefined class*/
       top: 0;
       width: 100%;
-      z-index: 99 !important;
+      z-index: 99 !important; /*it only focus on the z-index*/
 }
-.container{
+.container{ /*predefined class*/
 	margin-top:10em;
 }
 .welcome{
@@ -183,7 +183,7 @@ body{
 	border:4px solid #467648;
 	margin-right:5em;
 	margin-left:3em;
-	overflow:auto;
+	overflow:auto; /*shows a vertical scroll bar*/
 	width:27em;
 	height:13.5em;
 	padding-left:1em;
@@ -201,7 +201,7 @@ body{
 	margin-right:1em;
 }
 .seasabt{	
-	margin-left:3em;
+	margin-left:2em;
 	margin-right:2em;
 	padding-left:2em;
 	border:4px solid #467648;
@@ -209,7 +209,7 @@ body{
 	background-color:#444;
 	float:right;
 	width:22em;
-	overflow:auto;
+	overflow:auto; /*shows a vertical scroll*/
 }
 .Seas1{
 	height:50%;
@@ -227,7 +227,7 @@ h3{
 	margin-left:1.5em;
 	color:white;
 	text-align:center;
-	width:inherit;
+	width:inherit; /*the width takes the properties of the predefined class:container*/
 	background-size:auto;
 }
 .gif{
@@ -272,8 +272,8 @@ h3{
 	color:white;
 	text-align:center;
 }
-.vl {
-	display:inline;
+.vl { /*predefined class for facebook,intagram,...etc icons*/
+	display:inline; /* next to each other*/
 	padding-left:2em;
 	padding-right:2em;
     
@@ -290,11 +290,11 @@ h3{
 		font-size:15px;
 	}
 	#menu{
-		display:none;
+		display:none; /*doesn't show the menu bar*/
 	}
 	#top{
-	position:relative;
-	width:100%;
+		position:relative;
+		width:100%;
 	}
 	#top {
 		position:relative;
@@ -303,10 +303,10 @@ h3{
 		text-align:center;
 	}
 	#top #title{
-		display:none;
+		display:none; /*doesn't show the title*/
 	}
 	#top #caption{
-		display:none;
+		display:none;	/*doesn't show the caption*/
 	}
 	#logo{
 		position:relative;
@@ -327,12 +327,12 @@ h3{
 	.sidebtninner{
 		height:100%;
 		width:100%;
-		font-size:300%;
+		font-size:300%; /*makes the icon bigger*/
 		background-color:yellow;
 		color:black;
 	}
 	.headerCarousel{
-		display:none;
+		display:none; /*doesn't show texts on the carousel slideshow*/
 	}
 	#footer{
 		margin-top:150px;	
@@ -371,14 +371,14 @@ h3{
 		padding-left:0;
 		text-align:center;
 		margin-top:100px;
+		overflow:auto;
 	}
 	.sherlock1{
-		display:none;
-	}
-	
+		width:100%;
+	}	
 }
 /*ipad*/
-@media only screen and (min-width : 769px) and (max-width : 1099px){
+@media only screen and (min-width : 769px) and (max-width : 1199px){
 	body{
 		font-size:17px;
 	}
@@ -455,9 +455,13 @@ h3{
 		text-align:center;
 		margin-top:100px;
 		width:100%;
+		overflow:auto;
+	}
+	.sherlock1{
+		width:100%;
 	}
 }
-@media only screen and (min-width : 1100px ){
+@media only screen and (min-width : 1200px ){
 	.sidebtn{
 		display:none;
 	}
