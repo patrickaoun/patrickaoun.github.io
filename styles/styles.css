@@ -25,6 +25,7 @@ body{
 #top #caption{
 	position:relative;
 	font-size:2em;
+	font-family:volkhov;
 }
 .sidenav {
   height: 100%;
@@ -63,7 +64,7 @@ body{
 	
 }
 #menu > li{
-	width: 25%;
+	width: 20%;
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -73,7 +74,7 @@ body{
 	
 }
 #menu .sousMenu{
-	width: 25%;
+	width: 20%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -239,9 +240,26 @@ h3{
 .video img{
 	width:100%;
 }
-.ctcUs{
-	float:right;
+.h1{
+	text-align:center;
 }
+.cominSoon{
+	text-align:center;
+}
+.sherlabt1{
+	border:5px dotted #467648;
+	text-align:center;
+	overflow:auto;
+	margin-bottom:10px;
+}
+.sherlabt2{
+	border:5px dotted #467648;
+	text-align:center;
+	overflow:auto;
+	height:500px;
+	margin-top:10px;
+}
+
 #footer{
 	position:relative;
 	margin-left:auto;
@@ -253,6 +271,12 @@ h3{
 	padding:0.5em 0;
 	color:white;
 	text-align:center;
+}
+.vl {
+	display:inline;
+	padding-left:2em;
+	padding-right:2em;
+    
 }
 #footer a{
 	color:white;
@@ -295,7 +319,7 @@ h3{
 		top:15%;
 		left:2%;
 		height:70%;
-		width:15%;
+		width:20%;
 	}
 	.bigButton{
 		width:100%;
@@ -306,6 +330,9 @@ h3{
 		font-size:300%;
 		background-color:yellow;
 		color:black;
+	}
+	.headerCarousel{
+		display:none;
 	}
 	#footer{
 		margin-top:150px;	
@@ -333,7 +360,10 @@ h3{
 		height:358.71695px;
 	}
 	.seasimg{
-		width:60%;
+		width:50%;
+	}
+	.seasimg img{
+		width:95%;
 	}
 	.seasabt{
 		margin-left:0;
@@ -342,10 +372,13 @@ h3{
 		text-align:center;
 		margin-top:100px;
 	}
+	.sherlock1{
+		display:none;
+	}
 	
 }
 /*ipad*/
-@media only screen and (min-width : 769px) and (max-width : 991px){
+@media only screen and (min-width : 769px) and (max-width : 1099px){
 	body{
 		font-size:17px;
 	}
@@ -424,9 +457,8 @@ h3{
 		width:100%;
 	}
 }
-@media only screen and (min-width : 992px ){
+@media only screen and (min-width : 1100px ){
 	.sidebtn{
 		display:none;
 	}
-	
 }
