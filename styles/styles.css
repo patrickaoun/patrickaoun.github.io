@@ -423,6 +423,9 @@ h3{
 		background-color:yellow;
 		color:black;
 	}
+	.headerCarousel{
+		display:none; /*doesn't show texts on the carousel slideshow*/
+	}
 	#footer{
 		margin-top:150px;	
 	}
